@@ -207,7 +207,42 @@ footer {
 }
 
 @media (max-width: 500px) {
-    
+     .navbar {
+         width: 100%;
+         flex-direction: column; 
+     }
+
+     header nav a {
+         border-bottom: 1px solid lightgray;
+         flex-direction: column;
+         align-items: center;  
+     }
+
+     .logo {
+         width: 40%;
+     }
+
+     #top .container {
+         flex-direction: column;
+     }
+
+     #top h1 {
+         font-size: 75px;
+     }
+
+     #top .get-started-btn {
+         margin-left: 30%;
+     }
+
+     #top img {
+         display: none;
+     }
+
+     #middle .container {
+         flex-direction: column;
+         margin-top: 5%;
+     }
+  
 }
 
 
