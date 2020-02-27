@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body {
-	margin: 10%;
+	margin: 2%;
 }
 * {
 	max-width: 100%;
@@ -147,7 +147,6 @@ header nav a {
 	width: 35%;
 	line-height: 1.2;
 	text-align: left;
-	border: 1px solid;
 }
 
 .about {
@@ -230,18 +229,15 @@ footer {
 		margin-left: 38%;
 	}
 
-	#middle .container {
-          
-	 }
-	 
+	
 	 .features { 
-		 width: 100%;
-		 margin: 8% 5% 8% 8%;
+		 width: 75%;
+		 margin: 3% 0 3% 3%;
 	 }
 
 	 .about {
-		 width: 100%;
-		 margin: 8% 5% 8% 8%;
+		 width: 75%;
+		 margin: 3% 0 3% 3%;
 	 }
 
 	 .middle-img {
@@ -258,21 +254,21 @@ footer {
 
 	.services {
 		width: 100%;
-		margin: 8% 5% 8% 6%;
+		margin: 5% 0;
 	}
 
 	.products {
 		width: 100%;
-		margin: 8% 5% 8% 6%;
+		margin: 5% 0;
 	}
 
 	.vision {
 		width: 100%;
-		margin: 8% 5% 8% 6%;
+		margin: 5% 0;
 	}
 
 	address {
-		margin: 8% 5% 8% 6%;
+		margin: 5%;
 	}
 
 
