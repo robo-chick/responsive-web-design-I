@@ -64,7 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
+body {
+	margin: 10%;
+}
 * {
 	max-width: 100%;
 }
@@ -77,26 +79,34 @@ h2 {
 	font-size: 20px;
 }
 
-.navbar {
+header {
 	display: flex;
 	width: 100%;
+}
+
+header .logo {
+	width: 20%;
+	height: 15%;
+	padding-top: 1%;
+}
+
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 2%;
 }
 
 header nav a {
 	display: flex;
 	width: 85%;
-	margin: auto;
-	justify-content: space-evenly;
+	margin-left: 1%;
+	justify-content: space-around;
 	text-decoration: none;
-	color: lightslategray;
-	
-}
+	color: lightslategray;	
+	}
 
-.logo {
-	display: flex;
-	width: 75%;
-	
-}
 
 #top .container {
 	display: flex;
@@ -114,21 +124,19 @@ header nav a {
 }
 
 #top h1 {
-	font-size: 150px;
+	font-size: 80px;
 	text-align: center;
-	
 }
 
 #top img {
 	display: flex;
-
-	height: 500px;
-	width: 500px;
-	
+	height: 300px;
+	width: 300px;
 }
 
 #middle .container {
 	display: flex;
+	width: 100%;
 	justify-content: flex-start;
 	padding: 2%;
 	border-top: 1px solid;
@@ -139,6 +147,7 @@ header nav a {
 	width: 35%;
 	line-height: 1.2;
 	text-align: left;
+	border: 1px solid;
 }
 
 .about {
@@ -202,35 +211,109 @@ footer {
 
 @media (max-width: 800px) {
 
+	header {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header .logo {
+		width: 30%;
+		padding: 4%;
+	}
+	
+	#top img {
+		display: none;
+	}
+
+	#top .get-started-btn {
+		margin-left: 38%;
+	}
+
+	#middle .container {
+          
+	 }
+	 
+	 .features { 
+		 width: 100%;
+		 margin: 8% 5% 8% 8%;
+	 }
+
+	 .about {
+		 width: 100%;
+		 margin: 8% 5% 8% 8%;
+	 }
+
+	 .middle-img {
+		width: 85%;
+		height: 100px;
+		padding-right: 5%;
+	}
+
+	#bottom .container-two {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.services {
+		width: 100%;
+		margin: 8% 5% 8% 6%;
+	}
+
+	.products {
+		width: 100%;
+		margin: 8% 5% 8% 6%;
+	}
+
+	.vision {
+		width: 100%;
+		margin: 8% 5% 8% 6%;
+	}
+
+	address {
+		margin: 8% 5% 8% 6%;
+	}
+
+
 }
 
 @media (max-width: 500px) {
+
+	body {
+		margin: 15%;
+	}
+
+    header {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
      .navbar {
-         width: 100%;
-		 flex-direction: column; 
+		 flex-direction: column;
+		 justify-content: center;
+		 align-items: center;
      }
 
      header nav a {
-         border-bottom: 1px solid lightgray;
-		 flex-direction: column;
-         align-items: center;  
+		 justify-content: center;
+		 align-items: center;
+		 width: 100%;
+		 border-bottom: 1px solid lightgray; 
          padding: 3%;
-     }
+	 }
+	 
+	 header .logo {
+		 width: 50%;
+	 }
 
-     .logo {
-		 width: 40%;
-     }
-
-     #top .container {
-         flex-direction: column;
-     }
-
+	
      #top h1 {
-         font-size: 75px;
+		 font-size: 60px;
      }
 
      #top .get-started-btn {
-         margin-left: 30%;
+         margin-left: 20%;
      }
 
      #top img {
@@ -245,23 +328,43 @@ footer {
 	 
 	 .features { 
 		 width: 100%;
-		 margin-top: 8%;
+		 margin: 8% 5% 8% 8%;
 	 }
 
 	 .about {
 		 width: 100%;
-		 margin: 8% 0 8% 6%;
+		 margin: 8% 5% 8% 8%;
 	 }
 
 	 .middle-img {
-		width: 80%;
+		width: 85%;
 		height: 100px;
+		padding-right: 5%;
 	}
 
 	#bottom .container-two {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.services {
+		width: 100%;
+		margin: 8% 5% 8% 6%;
+	}
+
+	.products {
+		width: 100%;
+		margin: 8% 5% 8% 6%;
+	}
+
+	.vision {
+		width: 100%;
+		margin: 8% 5% 8% 6%;
+	}
+
+	address {
+		margin: 8% 5% 8% 6%;
 	}
   
 }
